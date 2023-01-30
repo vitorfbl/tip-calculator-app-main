@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+        <form action="">
+          <div class="bill">
+
+          <label style="color: hsl(186, 14%, 43%);">Bill</label>
+          <input id="value" placeholder="0"  type="number" >
+          </div>
+          <div class="buttons">
+
+          <label style="color: hsl(186, 14%, 43%);">Select Tip %</label>
+          <input class="btn-5" type="button" value="5" style="text-align: center;">
+          <input class="btn-10" type="button" value="10" style="text-align: center;">
+          <input class="btn-15" type="button" value="15" style="text-align: center;">
+          <input class="btn-25" type="button" value="25" style="text-align: center;">
+          <input class="btn-50" type="button" value="50" style="text-align: center;">
+          <input class="custom" type="button" id="custom-button" value="Custom" style="text-align: center;">
+          </div>
+          <div class="tPersons">
+          <label style="color: hsl(186, 14%, 43%);">Number of People</label>
+          <input id="Person" type="number" placeholder="0">
+          </div>
+        </form>
+        <div class="greencard">
+          <div class="tipTotal">
+            <h3 style="color: white;">Tip Amount</h3>
+            <h5 style="color: hsl(186, 14%, 43%);">/Per Person</h5>
+            <h1 id="a" class="value" style="color: white;">$0.00</h1>
+          </div>
+          <div class="Total">
+            <h3 style="color: white;">Total </h3>
+            <h5 style="color: hsl(186, 14%, 43%);">/Person</h5>
+            <h1 id="b" class="value" style="color: white;">$0.00</h1>
+          </div>
+
+          <button class="resetButton" id="resetButton">RESET</button>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="app.js"></script>
+
+</html>

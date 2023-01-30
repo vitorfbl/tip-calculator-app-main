@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+* {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.card {
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.card input[type="number"] {
+    display: block;
+    width: 35%;
+    height: 40px;
+    text-align: end;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.card input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+
+.card input[type="button"] {
+    border-radius: 5px ;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    padding-right: 20px;
+    margin-right: 25px;
+    font-size: 24px;
+    color: #fff;
+    background-color: hsl(183, 100%, 15%);
+    outline: none;
+    border: none;
+}
+.card input[type="button"]:hover{
+    cursor: pointer;
+}
+.bill {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.bill:focus{
+    border:2px solid hsl(172, 67%, 45%);
+}
+
+.buttons {
+    
+    display: flex;
+    position: relative;
+    top: 120px;
+    left: 50px;
+    height: 30px;
+
+}
+
+.buttons label {
+    position: absolute;
+    bottom: 50px;
+}
+
+.btn-25 {
+    position: absolute;
+    top: 80px;
+    margin-right: 25px;
+}
+
+.btn-50 {
+    position: absolute;
+    top: 80px;
+    left: 125px;
+
+}
+
+.custom {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+
+.tPersons {
+    position: relative;
+    top: 290px;
+    left: 50px;
+
+}
+.greencard{
+    position: absolute;
+    top: 40px;
+    left: 470px;
+    width: 23vw;
+    height: 400px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius:15px ;
+}
+.tipTotal{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.tipTotal h5{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.tipTotal h1{
+    position: absolute;
+    top: -27px;
+    left: 210px;
+    font-size: 3rem;
+}
+
+.Total{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.Total h3{
+    position: absolute;
+    top: 60px;
+    
+}
+.Total h5{
+    position: absolute;
+    top: 85px;
+    left: 10px;
+}
+.Total h1{
+    position: absolute;
+    top: 35px;
+    left: 210px;
+    font-size: 3rem;
+}
+.resetButton{
+    width: 350PX;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top:300px;
+    left: 10%;
+    background-color:hsl(182, 67%, 26%);
+    font-size: 2rem;
+    color:hsl(182, 64%, 17%);
+    border:none;
+    border-radius: 10px;
+
+}
+.resetButton:hover{
+    cursor: pointer;
+    background-color:hsl(185, 41%, 84%);
+    color:hsl(182, 64%, 17%);
+}
+
+@media (max-width: 768px){
+    .container{
+    justify-content:end;
+    align-items: flex-end;
+}
+    .card{
+        height:700px;
+        width: 375px;
+    }
+    .buttons{
+        display: block;
+
+    }
+    .btn-10{
+        position: absolute;
+        top: 0px;
+        left:120px;
+    }
+    .btn-15{
+        position: absolute;
+        top: 70px;
+    }
+    .btn-25{
+        position: absolute;
+        top: 70px;
+        left: 120px;
+    }
+    .btn-50{
+        position: absolute;
+        top: 140px;
+        left: 0px;
+    }
+    .custom{
+        position: absolute;
+        top: 140px;
+        left: 120px;
+    }
+    .card input[type="number"]{
+        width: 250px;
+    }
+    .greencard{
+        position: relative;
+        top: 320px;
+        width: 375px;
+        height: 230px;
+        left: 0px;
+    }
+    .tipTotal h1{
+        position: absolute;
+        top: -10px;
+        left: 180px;
+        font-size: 2rem;
+    }
+    .Total h1{
+        position: absolute;
+        top: 50px;
+        left: 180px;
+        font-size: 2em;
+    }
+    .Total{
+        position: relative;
+        top: 20px;
+    }
+    .resetButton{
+        position: absolute;
+        left: 10px;
+        top: 170px;
+
+    }
+}
