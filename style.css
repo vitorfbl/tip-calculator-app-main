@@ -34,6 +34,7 @@ body {
     left: 10px;
 }
 .card {
+    border-radius:15px;
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
