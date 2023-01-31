@@ -18,7 +18,21 @@ body {
     align-items: center;
     background-color: hsl(185, 41%, 84%);
 }
-
+.logo{
+    position: relative;
+    bottom: 35%;
+    left: 25%;
+}
+.icon-dollar{
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+}
+.icon-persons{
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+}
 .card {
     flex-wrap: wrap;
     flex-direction: column;
@@ -253,5 +267,10 @@ body {
         left: 10px;
         top: 170px;
 
+    }
+    .logo{
+        position: absolute;
+        left: 40%;
+        bottom: 90%;
     }
 }
